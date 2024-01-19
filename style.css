@@ -10,13 +10,14 @@ body {
 }
 
 .wrapper {
+
   width: 40rem;
   background-color: #fff;
-  padding: 5rem 9rem;
+  padding: 2rem 23rem 9rem 10rem;
   border-radius: 1rem;
   display: flex;
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -33,6 +34,17 @@ body {
     display: grid;
     grid-template-columns: repeat(4,auto);
     gap: 2rem;
+}
+
+.stats-container{
+    /* text-align: right; */
+    margin-bottom: 1.2rem;
+    color: #000;
+    position: absolute;
+    /* top: 0; */
+    left: 1rem;
+    font-size: 1rem;
+
 }
 
 .card-container{
@@ -55,13 +67,24 @@ body {
     transform: rotateY(180deg);
 }
 
-.card-container.flipped.card-before{
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+  }
+  .card-container.flipped .card-after {
+    transform: rotateY(0deg);
+  }
+
+/* .card-before{
     transform: rotateY(180deg);
 }
 
-.card-container.flipped.card-after{
+.card-after{
     transform: rotateY(0deg);
 }
+
+.flipped{
+    transform: rotate(180deg);
+} */
 
 .controls-container{
     position: absolute;
