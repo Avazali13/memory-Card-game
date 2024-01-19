@@ -10,7 +10,6 @@ body {
 }
 
 .wrapper {
-
   width: 40rem;
   background-color: #fff;
   padding: 2rem 23rem 9rem 10rem;
@@ -20,59 +19,83 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
-
-
-.game-container{
-    position: relative;
-    
-    width: 100%;
-    .image{
-        width: 80px;
-    }
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    gap: 2rem;
-}
-
-.stats-container{
-    /* text-align: right; */
-    margin-bottom: 1.2rem;
-    color: #000;
+@media (max-width: 767px) {
+  .wrapper {
+    width: 10rem;
+    padding: 5rem 12rem;
     position: absolute;
-    /* top: 0; */
-    left: 1rem;
-    font-size: 1rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .game-container {
+    position: relative;
+    padding-top: 4rem;
+    width: 100%;
+    gap: 0.5rem;
+    left: -9.5rem;
+    width: 200px;
 
+    gap: 1rem !important;
+    .image {
+      width: 70px !important;
+    }
+  }
+
+  .stats-container {
+    padding-top: 1rem;
+  }
 }
 
-.card-container{
-    position: relative;
-    width: 4rem;
-    height: 6rem;
-    cursor: pointer;
+.game-container {
+  position: relative;
+
+  width: 100%;
+  .image {
+    width: 80px;
+  }
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+}
+
+.stats-container {
+  /* text-align: right; */
+  margin-bottom: 1.2rem;
+  color: #000;
+  position: absolute;
+  /* top: 0; */
+  left: 1rem;
+  font-size: 1rem;
+}
+
+.card-container {
+  position: relative;
+  width: 4rem;
+  height: 6rem;
+  cursor: pointer;
 }
 
 .card-after,
-.card-before{
-    position: absolute;
-    border-radius: 0.6rem;
-    width: 100%;
-    transition:all 0.7s ease-in-out;
-    backface-visibility: hidden;
+.card-before {
+  position: absolute;
+  border-radius: 0.6rem;
+  width: 100%;
+  transition: all 0.7s ease-in-out;
+  backface-visibility: hidden;
 }
 
-.card-after{
-    transform: rotateY(180deg);
+.card-after {
+  transform: rotateY(180deg);
 }
 
 .card-container.flipped .card-before {
-    transform: rotateY(180deg);
-  }
-  .card-container.flipped .card-after {
-    transform: rotateY(0deg);
-  }
+  transform: rotateY(180deg);
+}
+.card-container.flipped .card-after {
+  transform: rotateY(0deg);
+}
 
 /* .card-before{
     transform: rotateY(180deg);
@@ -86,33 +109,32 @@ body {
     transform: rotate(180deg);
 } */
 
-.controls-container{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    top:0;
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
 }
-button{
+button {
+  /* position: absolute; */
 
-        /* position: absolute; */
-     
-         padding: 1rem 1.5rem;
-         border-radius: 1rem;
-         background-color: blueviolet;
-         color: #fff;
-}
-
-#stop{
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: blueviolet;
+  color: #fff;
 }
 
-.hide{
-    display: none;
+#stop {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.hide {
+  display: none;
 }
