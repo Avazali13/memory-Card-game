@@ -1,2 +1,3 @@
 https://memory-card13.netlify.app/
-P.S Don't stop the game)))
+
+P.S I highly recommend don't click the stop button more than once)))
