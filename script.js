@@ -9,20 +9,20 @@ let internal;
 let cards;
 let firstCard = false;
 let secondCard = false;
-let currenttime=0;
+let currenttime = 0;
 const frontUrl = "/assets/main.png";
 const items = [
-  { image: "/assets/card1.png", name: "card1" },
-  { image: "/assets/card2.png", name: "card2" },
-  { image: "/assets/card3.png", name: "card3" },
-  { image: "/assets/card4.png", name: "card4" },
-  { image: "/assets/card5.png", name: "card5" },
-  { image: "/assets/card6.png", name: "card6" },
-  { image: "/assets/card7.png", name: "card7" },
-  { image: "/assets/card8.png", name: "card8" },
-  { image: "/assets/card9.png", name: "card9" },
-  { image: "/assets/K3.png", name: "K3" },
-  { image: "/assets/K4.png", name: "K4" },
+  { image: "./assets/card1.png", name: "card1" },
+  { image: "./assets/card2.png", name: "card2" },
+  { image: "./assets/card3.png", name: "card3" },
+  { image: "./assets/card4.png", name: "card4" },
+  { image: "./assets/card5.png", name: "card5" },
+  { image: "./assets/card6.png", name: "card6" },
+  { image: "./assets/card7.png", name: "card7" },
+  { image: "./assets/card8.png", name: "card8" },
+  { image: "./assets/card9.png", name: "card9" },
+  { image: "./assets/K3.png", name: "K3" },
+  { image: "./assets/K4.png", name: "K4" },
 ];
 
 let seconds = 0,
@@ -36,8 +36,8 @@ const timeGenerator = () => {
     minutes += 1;
     seconds = 0;
   }
-  return time.innerHTML = `<span>Time:</span>${minutes}min : ${seconds}sec`;
-//  return time.innerHTML = `salam`;
+  return (time.innerHTML = `<span>Time:</span>${minutes}min : ${seconds}sec`);
+  //  return time.innerHTML = `salam`;
 };
 
 const movesCounter = () => {
@@ -135,8 +135,8 @@ start.addEventListener("click", () => {
   start.classList.add("hide");
   console.log(internal);
   moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
-  let timeer=setInterval(timeGenerator,1000)
-  time.innerHTML=timeer;
+  let timeer = setInterval(timeGenerator, 1000);
+  time.innerHTML = timeer;
   initalizer();
   // console.log(cards);
 });

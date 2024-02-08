@@ -1,38 +1,38 @@
 [
     {
-        "image" : "/assets/card1.png",
+        "image" : "./assets/card1.png",
         "name" : "card1"
     },
     {
-        "image" : "/assets/card2.png",
+        "image" : "./assets/card2.png",
         "name" : "card2"
     },
     {
-        "image" : "/assets/card3.png",
+        "image" : "./assets/card3.png",
         "name" : "card3"
     },
     {
-        "image" : "/assets/card4.png",
+        "image" : "./assets/card4.png",
         "name" : "card4"
     },
     {
-        "image" : "/assets/card5.png",
+        "image" : "./assets/card5.png",
         "name" : "card5"
     },
     {
-        "image" : "/assets/card6.png",
+        "image" : "./assets/card6.png",
         "name" : "card6"
     },
     {
-        "image" : "/assets/card7.png",
+        "image" : "./assets/card7.png",
         "name" : "card7"
     },
     {
-        "image" : "/assets/card8.png",
+        "image" : "./assets/card8.png",
         "name" : "card8"
     },
     {
-        "image" : "/assets/card9.png",
+        "image" : "./assets/card9.png",
         "name" : "card9"
     }
 ]
